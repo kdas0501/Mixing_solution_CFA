@@ -16,17 +16,8 @@ This repository contains the following .py files:
 - **GARCH_CFA_mixing.py:**
   Computes the price of a European put option in the GARCH diffusion model with piecewise-constant parameter inputs via the mixing solution closed-form approximation method.
   
-- **Heston_CFA_mixing:**
+- **Heston_CFA_mixing.py:**
     Computes the price of a European put option in the Heston model with piecewise-constant parameter inputs via the mixing solution closed-form approximation method.
-  
-- **Monte_mixing_pw.py:**
-    Computes the price of a European put option in the Heston, GARCH diffusion, Ornstein-Uhlenbeck, Inverse-Gamma, and Verhulst models with piecewise-constant parameter inputs via the mixing solution Monte-Carlo method.
-  
-- **GARCH_compare_pw.py:**
-    Compares the price and implied volatility of a European put option in the GARCH diffusion model with piecewise-constant parameter inputs, where the price is obtained via the mixing solution closed-form approximation method and mixing solution Monte-Carlo method.
-   
-- **Heston_compare_pw.py:**
-    Compares the price and implied volatility of a European put option in the Heston model with piecewise-constant parameter inputs, where the price is obtained via the mixing solution closed-form approximation method and mixing solution Monte-Carlo method.
     
 - **Omg.py:**
   Contains functions Omg1, Omg2, Omg3, Omg4, Omg5 which compute the integral operator (1 to 5 fold) for piecewise-constant parameter inputs.
@@ -43,12 +34,21 @@ This repository contains the following .py files:
 
 ### Auxiliary files
 The rest of the .py files are auxiliary files that are not required for the closed-form approximation formula.
+
+  - **Monte_mixing_pw.py:**
+    Computes the price of a European put option in the Heston, GARCH diffusion, Ornstein-Uhlenbeck, Inverse-Gamma, and Verhulst models with piecewise-constant parameter inputs via the mixing solution Monte-Carlo method.
   
-- **BSform_pw:** 
+- **GARCH_compare_pw.py:**
+    Compares the price and implied volatility of a European put option in the GARCH diffusion model with piecewise-constant parameter inputs, where the price is obtained via the mixing solution closed-form approximation method and mixing solution Monte-Carlo method.
+   
+- **Heston_compare_pw.py:**
+    Compares the price and implied volatility of a European put option in the Heston model with piecewise-constant parameter inputs, where the price is obtained via the mixing solution closed-form approximation method and mixing solution Monte-Carlo method.
+    
+- **BSform_pw.py:** 
   Computes the usual Black-Scholes price of a European Put/Call option for piecewise-constant parameter inputs.
   
-- **ImpVolBrent_pw:** 
+- **ImpVolBrent_pw.py:** 
   Computes the implied volatility of a European Put/Call option with piecewise-constant parameter inputs via Brent's method. 
   
-- **DeltaStrikes_pw:**
-  Computes the strike of an option contract corresponding to a given European Put/Call option Delta.
+- **DeltaStrikes_pw.py:**
+  Computes the strike of an option contract corresponding to a given European Put/Call option Delta with piecewise-constant parameter inputs.
