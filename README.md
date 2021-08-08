@@ -10,6 +10,12 @@ email addresses: kaustav.das@monash.edu and nicolas.langrene@csiro.au
 
 
 
+### Quickstart for readers of article
+
+Simply run Heston_compare_pw.py, which computes and compares the price and implied volatility of a European put option in the Heston model with piecewise-constant parameter inputs, where the price is obtained via the mixing solution closed-form approximation method and mixing solution Monte-Carlo method.
+
+
+
 ### Main files 
 This repository contains the following .py files:
 
@@ -48,7 +54,7 @@ The rest of the .py files are auxiliary files that are not required for the clos
   Computes the usual Black-Scholes price of a European Put/Call option for piecewise-constant parameter inputs.
   
 - **ImpVolBrent_pw.py:** 
-  Computes the implied volatility of a European Put/Call option with piecewise-constant parameter inputs via Brent's method. 
+  Computes the implied volatility of a European put/call option with piecewise-constant parameter inputs via Brent's method. 
   
 - **DeltaStrikes_pw.py:**
-  Computes the strike of an option contract corresponding to a given European Put/Call option Delta with piecewise-constant parameter inputs.
+  Computes the strike of an option contract corresponding to a given European put/call option Delta with piecewise-constant parameter inputs.
