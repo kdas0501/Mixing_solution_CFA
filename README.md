@@ -14,10 +14,9 @@ email addresses: kaustav.das@monash.edu and nicolas.langrene@csiro.au
 
 Simply run Heston_compare_pw.py, which computes and compares the price and implied volatility of a European put option in the Heston model with piecewise-constant parameter inputs, where the price is obtained via the mixing solution closed-form approximation method and mixing solution Monte-Carlo method.
 
-
-
 ### Main files 
-This repository contains the following .py files:
+
+The following .py files are required in order to compute the closed-form approximation formula.
 
 - **GARCH_CFA_mixing.py:**
   Computes the price of a European put option in the GARCH diffusion model with piecewise-constant parameter inputs via the mixing solution closed-form approximation method.
@@ -42,7 +41,7 @@ This repository contains the following .py files:
 The rest of the .py files are auxiliary files that are not required for the closed-form approximation formula.
 
   - **Monte_mixing_pw.py:**
-    Computes the price of a European put option in the Heston, GARCH diffusion, Ornstein-Uhlenbeck, Inverse-Gamma, and Verhulst models with piecewise-constant parameter inputs via the mixing solution Monte-Carlo method.
+    Computes the price of a European put/call option in the Heston, GARCH diffusion, Ornstein-Uhlenbeck, Inverse-Gamma, and Verhulst models with piecewise-constant parameter inputs via the mixing solution Monte-Carlo method.
   
 - **GARCH_compare_pw.py:**
     Compares the price and implied volatility of a European put option in the GARCH diffusion model with piecewise-constant parameter inputs, where the price is obtained via the mixing solution closed-form approximation method and mixing solution Monte-Carlo method.
@@ -51,7 +50,7 @@ The rest of the .py files are auxiliary files that are not required for the clos
     Compares the price and implied volatility of a European put option in the Heston model with piecewise-constant parameter inputs, where the price is obtained via the mixing solution closed-form approximation method and mixing solution Monte-Carlo method.
     
 - **BSform_pw.py:** 
-  Computes the usual Black-Scholes price of a European Put/Call option for piecewise-constant parameter inputs.
+  Computes the usual Black-Scholes price of a European put/call option for piecewise-constant parameter inputs.
   
 - **ImpVolBrent_pw.py:** 
   Computes the implied volatility of a European put/call option with piecewise-constant parameter inputs via Brent's method. 
